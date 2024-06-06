@@ -17,6 +17,7 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faCircle as faCircleS,
+  faBars,
   faPhone,
   faHouse,
   faLink,
@@ -36,6 +37,7 @@ import {
 } from "@fortawesome/free-regular-svg-icons";
 library.add(
   faCircleS,
+  faBars,
   faCircleR,
   faCopyright,
   faFacebookF,

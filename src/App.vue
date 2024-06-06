@@ -28,4 +28,9 @@ export default {
   <AppUpViewport />
 </template>
 
-<style lang="scss"></style>
+<style lang="scss">
+// MIXINS
+@use "./style/subStyle/mixins.scss" as *;
+// VARIABLE
+@use "./style/subStyle/variable.scss" as *;
+</style>

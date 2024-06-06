@@ -1,5 +1,6 @@
 <script>
 import AppMainSC from "./subComponentMain/AppMainSC.vue";
+import AppFormSC from "./subComponentMain/AppFormSC.vue";
 export default {
   data() {
     return {
@@ -15,6 +16,7 @@ export default {
 
   components: {
     AppMainSC,
+    AppFormSC,
   },
 
   // 	props:{
@@ -24,8 +26,8 @@ export default {
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
   <AppMainSC />
+  <AppFormSC />
 </template>
 
 <style lang="scss" scoped></style>

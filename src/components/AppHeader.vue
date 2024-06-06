@@ -20,16 +20,15 @@ export default {
     // },
   },
   components: {
-    AppHeroSC,
     AppHeaderSC,
+    AppHeroSC,
   },
 };
 </script>
 
 <template>
-  <h1>{{ title }}</h1>
-  <AppHeroSC />
   <AppHeaderSC />
+  <AppHeroSC />
 </template>
 
 <style lang="scss" scoped>
