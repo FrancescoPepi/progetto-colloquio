@@ -1,10 +1,9 @@
 <script>
-
 export default {
   data() {
     return {
       text: "Dolci Scoperte",
-      subText: "concorso"
+      subText: "concorso",
     };
   },
 
@@ -42,6 +41,7 @@ export default {
 .bg {
   position: relative;
   color: white;
+  overflow-x: hidden;
 
   .container-fluid::before {
     content: "";
@@ -56,7 +56,6 @@ export default {
     background-size: cover;
     border-radius: 100%;
   }
-
 
   &.debug {
     border: 2px dashed black;

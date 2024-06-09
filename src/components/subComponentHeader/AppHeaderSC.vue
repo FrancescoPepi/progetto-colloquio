@@ -1,5 +1,4 @@
 <script>
-
 export default {
   data() {
     return {
@@ -7,7 +6,7 @@ export default {
       logo: "/src/assets/icon/Raggruppa_150.png",
       logoMini: "/src/assets/icon/Raggruppa_78.png",
       isMobile: false,
-      window: null
+      window: null,
     };
   },
 
@@ -15,10 +14,10 @@ export default {
     checkIsMobile() {
       this.window = window.innerWidth;
       if (this.window <= 750) {
-        this.isMobile = true
-        return
+        this.isMobile = true;
+        return;
       }
-      this.isMobile = false
+      this.isMobile = false;
       return;
     },
   },
@@ -27,7 +26,7 @@ export default {
   //	MyComponent,
   // },
   created() {
-    window.addEventListener('resize', this.checkIsMobile);
+    window.addEventListener("resize", this.checkIsMobile);
     this.checkIsMobile();
   },
 
@@ -43,7 +42,11 @@ export default {
       <div class="row justify-content-between align-items-center">
         <!-- logo -->
         <div class="col-6">
-          <img :src="isMobile ? logoMini : logo" class="img-fluid w-50" alt="logo">
+          <img
+            :src="isMobile ? logoMini : logo"
+            class="img-fluid w-50"
+            alt="logo"
+          />
         </div>
         <!-- nav full-->
         <div v-show="!isMobile" class="col-4">
@@ -55,7 +58,12 @@ export default {
         </div>
         <!-- nav mobile -->
         <div v-show="isMobile" class="dropdown col-4">
-          <div class="  text-end" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div
+            class="text-end"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <font-awesome-icon icon="fa-solid fa-bars" class="fa-2x" />
           </div>
           <ul class="dropdown-menu">
@@ -77,6 +85,7 @@ export default {
 
 .bg {
   color: $text-primary;
+  background-color: $bg-color-red;
 
   &.debug {
     border: 2px dashed red;

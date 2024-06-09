@@ -27,13 +27,14 @@ export default {
 </script>
 
 <template>
-  <!-- <div class="bg"> -->
   <div class="container-fluid container-sm">
-    <div class="row ">
+    <div class="row">
       <div class="col-12 col-sm-7 px-sm-5 px-5 text-center text-sm-start">
-        <img :src="img" class="w-100" alt="img dolci scoperte">
+        <img :src="img" class="w-100" alt="img dolci scoperte" />
       </div>
-      <div class="col-12 col-sm-5 px-sm-5 px-5 text-center text-sm-start text-hero align-self-center">
+      <div
+        class="col-12 col-sm-5 px-sm-5 px-5 text-center text-sm-start text-hero align-self-center"
+      >
         <span>Viaggia alla scoperta della </span>
         <span>terza isola Eridania </span>
         <span>ricca di novità, fantastici premi e </span>
@@ -41,7 +42,6 @@ export default {
       </div>
     </div>
   </div>
-  <!-- </div> -->
 </template>
 
 <style lang="scss" scoped>
@@ -55,7 +55,6 @@ export default {
   &.debug {
     border: 2px dashed red;
   }
-
 
   .text-hero {
     font-weight: 900;

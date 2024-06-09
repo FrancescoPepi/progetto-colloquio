@@ -23,9 +23,10 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain />
+  <router-view></router-view>
+  <!-- <AppMain />
   <AppFooter />
-  <AppUpViewport />
+  <AppUpViewport /> -->
 </template>
 
 <style lang="scss">
